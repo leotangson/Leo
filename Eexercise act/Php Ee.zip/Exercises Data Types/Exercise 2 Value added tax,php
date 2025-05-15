@@ -1,0 +1,14 @@
+<?php
+
+$price = 100; 
+$vatRate = 0.18; 
+
+
+$vat = $price * $vatRate; 
+$totalPrice = $price + $vat; 
+
+
+echo "Price: $" . number_format($price, 2) . "\n";
+echo "VAT: $" . number_format($vat, 2) . "\n";
+echo "Total Price: $" . number_format($totalPrice, 2) . "\n";
+?>

@@ -1,0 +1,137 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pixel.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 80px; 
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 1s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #555;
+    outline: none;
+}
+
+header {
+    margin-top: 100px;
+    text-align: center;
+    padding: 80px 20px 20px;
+    color: white;
+    font-size: xx-large;
+    font-family: sans-serif;
+    font-style: italic;
+    text-shadow: 2px 2px 5px black;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-family: Courier, monospace;
+    text-shadow: 1px 1px 3px black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap; 
+}
+
+.profile-pic {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-content p {
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#home {
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+#home h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+#home p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#about {
+    color: white;
+    font-family: sans-serif;
+ 
+}
+
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 100%;
+        max-width: 300px;
+    }
+}
